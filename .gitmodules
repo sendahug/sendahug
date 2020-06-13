@@ -1,0 +1,6 @@
+[submodule "send-hug-frontend"]
+	path = send-hug-frontend
+	url = https://github.com/sendahug/send-hug-frontend
+[submodule "send-hug-backend"]
+	path = send-hug-backend
+	url = https://github.com/sendahug/send-hug-backend
