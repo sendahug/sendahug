@@ -20,16 +20,16 @@ So this is the idea of this project. If a person is struggling, if they need to 
 
 ## Installation and Usage
 
-- Backend installation and usage instructions - [`./backend/`](./backend/README.md)
-- Frontend installation and usage instructions - [`./frontend/`](./frontend/README.md)
+- Backend installation and usage instructions - [`Backend README`](https://github.com/sendahug/send-hug-backend/blob/Dev/README.md)
+- Frontend installation and usage instructions - [`Frontend README`](https://github.com/sendahug/send-hug-frontend/blob/Dev/README.md)
 
 ## Authentication
 
 The project uses Auth0 as a third-party authentication provider. Authentication is done by Auth0, which in turn returns a JSON Web Token containing the user's data and permissions.
 
-The backend handles decoding and verifying the given token, as well as checking the authenticated user's permissions. For full information about the backend authentication checks, read the [`backend README`](./backend/README.md).
+The backend handles decoding and verifying the given token, as well as checking the authenticated user's permissions. For full information about the backend authentication checks, read the [`backend README`](https://github.com/sendahug/send-hug-backend/blob/Dev/README.md).
 
-The frontend also decodes the token in order to get the user's permissions and Auth0 ID (the JWT payload 'sub'), but doesn't verify that the token is authentic. This is done by the backend upon fetching the user's data from the database. For full information about the frontend authentication process, read the [`frontend README`](./frontend/README.md).
+The frontend also decodes the token in order to get the user's permissions and Auth0 ID (the JWT payload 'sub'), but doesn't verify that the token is authentic. This is done by the backend upon fetching the user's data from the database. For full information about the frontend authentication process, read the [`frontend README`](https://github.com/sendahug/send-hug-frontend/blob/Dev/README.md).
 
 This project uses Role-based Authentication. There are currently three roles defined in the app:
 
@@ -80,15 +80,15 @@ This role is meant for app admins and thus contains full access to the app. App 
 
 The default Auth0 configuration (meaning, the domain, audience, client ID, etc) can be altered to reflect your own Auth0 account. Auth0 configuration variables are stated in four places:
 
-1. [`./backend/auth.py`](./backend/auth.py) - Contains the backend's authentication logic, as well as the Auth0 domain and the audience (both coming from an environment variable), and the used algorithm. These three variables can be found at the top of the file (lines 8-10).
-2. [`./backend/setup.sh`](./backend/setup.sh) - Contains setup variables, which include: the database URL, the Auth0 domain, the audience, the used algorithm and the client ID.
-3. [`frontend environment config`](./frontend/src/environments/environment.ts) - Contains the development environment configuration required by Angular. Within that JSON configuration is the Auth0 variable, containing: the Auth0 domain, the app's client ID, the audience, the URL to which the user is redirected after login, and the URL to which the user is redirected after logging out.
-4. [`frontend production environment config`](./frontend/src/environments/environment.prod.ts) - Contains the production environment configuration required by Angular. Within that JSON configuration is the Auth0 variable, containing: the Auth0 domain, the app's client ID, the audience, the URL to which the user is redirected after login, and the URL to which the user is redirected after logging out.
+1. [`./backend/auth.py`](https://github.com/sendahug/send-hug-backend/blob/master/auth.py) - Contains the backend's authentication logic, as well as the Auth0 domain and the audience (both coming from an environment variable), and the used algorithm. These three variables can be found at the top of the file (lines 8-10).
+2. [`./backend/setup.sh`](https://github.com/sendahug/send-hug-backend/blob/master/setup.sh) - Contains setup variables, which include: the database URL, the Auth0 domain, the audience, the used algorithm and the client ID.
+3. [`frontend environment config`](https://github.com/sendahug/send-hug-frontend/blob/Dev/src/environments/environment.ts) - Contains the development environment configuration required by Angular. Within that JSON configuration is the Auth0 variable, containing: the Auth0 domain, the app's client ID, the audience, the URL to which the user is redirected after login, and the URL to which the user is redirected after logging out.
+4. [`frontend production environment config`](https://github.com/sendahug/send-hug-frontend/blob/Dev/src/environments/environment.prod.ts) - Contains the production environment configuration required by Angular. Within that JSON configuration is the Auth0 variable, containing: the Auth0 domain, the app's client ID, the audience, the URL to which the user is redirected after login, and the URL to which the user is redirected after logging out.
 
 ## Hosting
 
-- Backend hosting instructions - [`./backend/`](./backend/README.md#hosting)
-- Frontend hosting instructions - [`./frontend/`](./frontend/README.md#hosting)
+- Backend hosting instructions - [`./backend/`](https://github.com/sendahug/send-hug-backend/blob/Dev/README.md#hosting)
+- Frontend hosting instructions - [`./frontend/`](https://github.com/sendahug/send-hug-frontend/blob/Dev/README.md#hosting)
 
 ## Live Version
 
