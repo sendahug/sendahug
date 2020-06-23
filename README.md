@@ -45,6 +45,7 @@ The base role. Given to each user upon registration using an Auth0 rule. Include
   - read:messages - Read messages sent to them.
   - post:post - Create a new post.
   - post:message - Create a new message.
+  - post:report - Create a new report.
   - patch:user - Update their own user data.
   - patch:my-post - Update their own post.
   - delete:my-post - Delete their own post.
@@ -58,6 +59,7 @@ This role is meant for app moderating, in order to ensure posts' texts are appro
   - read:messages - Read messages sent to them.
   - post:post - Create a new post.
   - post:message - Create a new message.
+  - post:report - Create a new report.
   - patch:user - Update their own user data.
   - patch:any-post - Update any user's post.
   - delete:my-post - Delete their own post.
@@ -71,10 +73,12 @@ This role is meant for app admins and thus contains full access to the app. App 
   - read:messages - Read messages sent to them.
   - post:post - Create a new post.
   - post:message - Create a new message.
+  - post:report - Create a new report.
   - patch:any-user - Update any user's data.
   - patch:any-post - Update any user's post.
   - delete:any-post - Delete any user's post.
   - delete:messages - Delete a message sent them.
+  - read:admin-board - Use the admin dashboard.
 
 ### Auth0 Configuration
 
